@@ -1,3 +1,3 @@
 variable "vnet" {
-  type = map
-  }
+  type = map(any)
+}

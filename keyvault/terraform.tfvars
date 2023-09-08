@@ -1,5 +1,7 @@
-  adminusername = "vm-username"
-  usernamevalue = "adminuser"
-
-  adminpassword =  "vm-password"
-  passwordvalue =  "B0rn2win@devops"
+Keyvault = {
+  "Keyvault1" = {
+    "name"                = "Shivam-vmuserlogin"
+    "location"            = "central india"
+    "resource_group_name" = "Shivam-Resourcegroup"
+  }
+}

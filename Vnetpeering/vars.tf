@@ -1,10 +1,3 @@
-variable "rgname" {
-  
-}
-variable "vnetnamelinux" {
-  
-}
+variable "peering" {
 
-variable "vnetnamewindows" {
-  
 }

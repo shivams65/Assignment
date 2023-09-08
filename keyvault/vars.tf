@@ -1,12 +1,3 @@
-variable "adminusername" {
-  
-}
-variable "usernamevalue" {
-  
-}
-variable "adminpassword" {
-  
-}
-variable "passwordvalue" {
-  
+variable "Keyvault" {
+
 }

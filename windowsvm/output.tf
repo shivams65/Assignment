@@ -1,7 +1,15 @@
-data "azurerm_public_ip" "publicipaddress" {
-  name                = "windowspubip01"
-  resource_group_name = "Shivam-Resourcegroup"
-}
+# output "publicip" {
+#   value = [ for publicip in azurerm_public_ip.publicip : ip_address]
+#   }
+
 output "publicip" {
-  value = data.azurerm_public_ip.publicipaddress.ip_address
-  }
+  value = [
+    for windowsvm in azurerm_public_ip.publicip : windowsvm.ip_address
+  ]
+}
+
+output "windowsid" {
+  value = [
+    for windowsvm in azurerm_windows_virtual_machine.window_vm : windowsvm.id
+  ]
+}

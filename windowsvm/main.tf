@@ -58,9 +58,9 @@ resource "azurerm_windows_virtual_machine" "window_vm" {
   }
 
   source_image_reference {
-    publisher = "MicrosoftWindowsServer"
-    offer     = "WindowsServer"
-    sku       = "2016-Datacenter"
+    publisher = "microsoftwindowsdesktop"
+    offer     = "windows-10"
+    sku       = "win10-21h2-ent"
     version   = "latest"
   }
 }
